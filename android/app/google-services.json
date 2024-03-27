@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:742031181196:android:ba735bb3691ff0077402a9",
+        "mobilesdk_app_id": "1:742031181196:android:5c8e402891da08777402a9",
         "android_client_info": {
-          "package_name": "com.example.app_debt_tracker"
+          "package_name": "com.app_debt_tracker"
         }
       },
       "oauth_client": [],

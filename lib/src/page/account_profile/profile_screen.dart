@@ -84,23 +84,13 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
 
   Widget buildCircleAccount() {
     return Center(
-      child: Container(
-        alignment: Alignment.center,
-        height: 100,
-        width: 100,
-        decoration: const BoxDecoration(
-            color: AppColors.PRIMARY_MAROON,
-            borderRadius: BorderRadius.all(Radius.circular(100))),
-        child: const CircleAvatar(
-          backgroundColor: AppColors.COLOR_WHITE,
-          radius: 40,
-          child: Icon(
-            Icons.person,
-            size: 75,
-            color: AppColors.PRIMARY_MAROON,
-          ),
-        ),
-      ),
+      child: CircleAvatar(
+          backgroundColor: AppColors.PRIMARY_MAROON,
+          radius: 50,
+          child: Paragraph(
+            content: users?.fullName?[0].toUpperCase() ?? "D",
+            style: TextStyle(color: Colors.white, fontSize: 25),
+          )),
     );
   }
 
